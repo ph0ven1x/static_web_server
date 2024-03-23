@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9e10c727-b69d-43f3-987f-61a7e667cbc8" name="Changes" comment="静态Web服务器-返回指定页面数据">
+    <list default="true" id="9e10c727-b69d-43f3-987f-61a7e667cbc8" name="Changes" comment="静态Web服务器-使用多线程支持多用户同时访问">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/static_web_server.py" beforeDir="false" afterPath="$PROJECT_DIR$/static_web_server.py" afterDir="false" />
     </list>
@@ -23,29 +23,30 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 4
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
   <component name="ProjectId" id="2e4THtqJkcWz7rRA3IPlPooqVM7" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "ignore.virus.scanning.warn.message": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;http.proxy&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -61,7 +62,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1711162765871</updated>
-      <workItem from="1711162766919" duration="7168000" />
+      <workItem from="1711162766919" duration="7513000" />
+      <workItem from="1711176786204" duration="1797000" />
     </task>
     <task id="LOCAL-00001" summary="静态Web服务器-返回固定页面数据">
       <option name="closed" value="true" />
@@ -79,7 +81,15 @@
       <option name="project" value="LOCAL" />
       <updated>1711175122780</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="静态Web服务器-使用多线程支持多用户同时访问">
+      <option name="closed" value="true" />
+      <created>1711176545973</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1711176545973</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -88,6 +98,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="静态Web服务器-返回固定页面数据" />
     <MESSAGE value="静态Web服务器-返回指定页面数据" />
-    <option name="LAST_COMMIT_MESSAGE" value="静态Web服务器-返回指定页面数据" />
+    <MESSAGE value="静态Web服务器-使用多线程支持多用户同时访问" />
+    <option name="LAST_COMMIT_MESSAGE" value="静态Web服务器-使用多线程支持多用户同时访问" />
   </component>
 </project>
