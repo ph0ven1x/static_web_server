@@ -1,17 +1,18 @@
-# 支持多用户同时访问(抽象)
+# 增加命令行绑定端口启动
 import socket
 import urllib.parse
 import threading
+import sys
 
 
 class HttpWebServer(object):
-    def __init__(self):
+    def __init__(self, port):
         # 创建tcp服务端套接字
         tcp_server_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
         # 设置端口复用，程序退出，端口立即释放
         tcp_server_socket.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, True)
         # 绑定端口号
-        tcp_server_socket.bind(('', 8989))
+        tcp_server_socket.bind(('', port))
         tcp_server_socket.listen(128)
         self.tcp_server_socket = tcp_server_socket
 
@@ -86,7 +87,17 @@ class HttpWebServer(object):
 
 
 def main():
-    web_server = HttpWebServer()
+    print(sys.argv)
+    if len(sys.argv) != 2:
+        print('执行命令格式: python3 xxx.py <port>')
+        return
+
+    if not sys.argv[1].isdigit():
+        print('执行命令格式: python3 xxx.py <port>')
+        return
+
+    port = int(sys.argv[1])
+    web_server = HttpWebServer(port)
     web_server.start()
 
 
